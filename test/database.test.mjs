@@ -5,6 +5,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { asAnalyst, createOrder, dashboard, loadReports, openDatabase, orderDetails, readSql } from '../db/database.mjs';
 
+
 const db = await openDatabase();
 after(() => db.close());
 
